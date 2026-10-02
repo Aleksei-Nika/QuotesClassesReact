@@ -1,5 +1,6 @@
 import React from 'react';
 import { random_qoute } from './quotes';
+import style from './QuoteViewer.module.css';
 
 export class QuoteViewer extends React.Component {
     constructor(props){
@@ -25,13 +26,13 @@ export class QuoteViewer extends React.Component {
 
     render() {
         return(
-            <div>
-                <div>
-                    <p>{this.state.curent.quote}</p>
-                    <p>{this.state.curent.author}</p>
+            <>
+                <div className={style.quoteBlock}>
+                    <p className={style.textQuote}>&ldquo;{this.state.curent.quote}&rdquo;</p>
+                    <p className={style.textAuthor}>{this.state.curent.author}</p>
                 </div>
                 <button onClick={this.handleNextQuote}>Следующая цитата</button>
-            </div>
+            </>
         )
     }
 }

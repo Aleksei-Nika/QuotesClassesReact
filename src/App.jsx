@@ -15,12 +15,12 @@ export class App extends React.Component {
 
   render(){
     return(
-      <>
+      <main>
         <button onClick={this.handleActiveQupteViewer}>
           {this.state.activeQuoteViewer ? 'Скрыть цитату' : 'Показать цитату'}
         </button>
         { this.state.activeQuoteViewer ? <QuoteViewer /> : null }
-      </>
+      </main>
     )
   }
 }
