@@ -9,15 +9,15 @@ export class App extends React.Component {
     };
   }
 
-  handleActiveQupteViewer = () => {
+  handleActiveQuoteViewer = () => {
     this.setState({ activeQuoteViewer: !this.state.activeQuoteViewer })
   }
 
   render(){
     return(
       <main>
-        <button onClick={this.handleActiveQupteViewer}>
-          {this.state.activeQuoteViewer ? 'Скрыть цитату' : 'Показать цитату'}
+        <button onClick={this.handleActiveQuoteViewer}>
+          { this.state.activeQuoteViewer ? 'Скрыть цитату' : 'Показать цитату' }
         </button>
         { this.state.activeQuoteViewer ? <QuoteViewer /> : null }
       </main>

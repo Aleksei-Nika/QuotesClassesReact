@@ -1,24 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 .quoteBlock {
-    height: 25vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    height: 50vh;
+    gap: 5%
 }
 
 .textQuote {
     color: #F2A03D;
     font-family: 'Lora', Georgia, serif;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
-    padding: 1rem 0 0 0;
 }
 
 .textAuthor {
     color: #D94F2B;
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 18px;
     align-self: end;
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    .textQuote {
+        font-size: 36px;
+    }
+    .textAuthor {
+        font-size: 30px;
+    }
+  }
+
+@media (min-width: 1200px) {
+    .textQuote {
+        font-size: 50px;
+    }
+    .textAuthor {
+        font-size: 40px;
+    }
 }

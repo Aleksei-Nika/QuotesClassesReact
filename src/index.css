@@ -1,6 +1,7 @@
 body {
-  height: 98vh;
-  width: 98vw;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
   background-color: #2B2B2B;
   display: flex;
   align-items: center;
@@ -13,12 +14,12 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 20vh
+  gap: 20px;
 }
 
 button {
-  width: 10vw;
-  height: 4vh;
+  width: 50vw;
+  height: 5vh;
   background-color: #2B2B2B;
   border: solid 1px #1A1110;
   border-radius: 50vh;
@@ -29,11 +30,29 @@ button {
 button:hover {
   color: #F7F5E6;
   background-color: #D94F2B;
-  border: solid 3px #1A1110;
   font-family: monospace;
   font-weight: bold;
 }
 
 button:active {
   background-color: #F2A03D;
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 24px;
+    min-height: 60px;
+    max-width: 600px;
+  }
+  button:hover {
+    border: solid 3px #1A1110;
+  }
+}
+
+@media (min-width: 1200px) {
+  button {
+    font-size: 30px;
+    min-height: 60px;
+    max-width: 350px;
+  }
 }

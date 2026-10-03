@@ -57,4 +57,4 @@ function random_item(items){
   return items[Math.floor(Math.random() * items.length)];
 }
 
-export const random_qoute = () => random_item(quotes);
+export const random_quote = () => random_item(quotes);
